@@ -31,8 +31,8 @@ Uploaded local files are stored in the exploration space. The exploration space 
 
 When creating data sources, the Quick BI has the following requirements for the network type of data sources.
 
-1.  The RDS VPC instance can access Quick BI with an extranet domain name. However, an intranet domain name cannot access the Quick BI.
-2.  RDS Mysql and SqlServer VPC instances can access Quick BI through an intranet domain name.
-3.  Instances in the classic network can access Quick BI with an intranet domain name.
-4.  Quick BI can be accessed by using the public network.
+1.  The VPC RDS instance can access Quick BI by using an extranet domain name. MySQL and SQL Server instances can access Quick BI by using an intranet domain name, other VPC RDS instances can't access Quick BI by using an intranet domain name.
+2.  The instances in the classic network can access Quick BI by using an extranet domain name and an intranet domain name. When you access Quick BI by using an extranet domain name, you should set the IP address whitelist on the RDS. For more information, see [Set whitelist](https://www.alibabacloud.com/help/doc-detail/26198.htm?spm=a2c63.p38356.a3.5.26854bd3feeGKO).
+3.  Quick BI can be accessed by using the public network.
+4.  The external database MySQL and SQL Server on VPC ECS instance can access Quick BI by using an intranet domain name.
 
